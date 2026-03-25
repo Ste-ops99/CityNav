@@ -1,2 +1,1 @@
-# CityNav
-School project, C
+# citynav
