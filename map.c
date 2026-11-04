@@ -16,7 +16,7 @@ Map* create_map() {
 
 // F1 - Aggiunge un nuovo punto di interesse
 void add_poi(Map *m, char *name, char *category) {
-    if (m->num_nodes >= MAX_NODES) {
+    if (m->num_nodes >= MAX_NODES || m->next_id >= MAX_NODES) {
         printf("Errore: numero massimo di nodi raggiunto\n");
         return;
     }
